@@ -265,6 +265,12 @@ a {
   margin: -1px;
 }
 
+.section-title {
+  color: #bdbdbd;
+  font-weight: 300;
+  font-size: 64px;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -410,7 +416,7 @@ a {
 /* ----- HEADER END ----- */
 /* ----- HERO START ----- */
 .hero {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .hero-slider__slide {
@@ -515,3 +521,52 @@ a {
 }
 
 /* ----- HERO END ----- */
+/* ----- ABOUT START ----- */
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.about__wrap {
+  padding: 30px 70px 30px 100px;
+  background-color: #fbfbfb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about__pic-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 570px;
+  gap: 30px;
+  margin-bottom: -60px;
+}
+.about__img:nth-child(2) {
+  margin-top: 30px;
+}
+.about__img:nth-child(3) {
+  margin-top: -110px;
+}
+.about__offer {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+.about__offer-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* ----- ABOUT END ----- */

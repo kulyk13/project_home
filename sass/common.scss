@@ -57,6 +57,11 @@ a {
   height: 1px;
   margin: -1px;
 }
+.section-title {
+  color: $text_color_light;
+  font-weight: 300;
+  font-size: 64px;
+}
 .container {
   max-width: 1200px;
   width: 100%;

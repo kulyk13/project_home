@@ -18,7 +18,7 @@
 /* ----- HEADER END ----- */
 /* ----- HERO START ----- */
 .hero {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 .hero-slider {
   &__slide {
@@ -113,3 +113,41 @@
   }
 }
 /* ----- HERO END ----- */
+/* ----- ABOUT START ----- */
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__wrap {
+    padding: 30px 70px 30px 100px;
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__pic-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 570px;
+    gap: 30px;
+    margin-bottom: -60px;
+  }
+  &__img {
+    &:nth-child(2) {
+      margin-top: 30px;
+    }
+    &:nth-child(3) {
+      margin-top: -110px;
+    }
+  }
+  &__offer {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    &-text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+  }
+}
+/* ----- ABOUT END ----- */
