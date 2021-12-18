@@ -4,3 +4,14 @@
 @import "fonts.scss";
 @import "reset.scss";
 @import "common.scss";
+/* ----- HEADER START ----- */
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__menu {
+    column-gap: 60px;
+    margin-right: 135px;
+    margin-left: auto;
+  }
+}
+/* ----- HEADER END ----- */

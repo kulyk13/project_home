@@ -284,6 +284,22 @@ a {
   margin-left: -10px;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+}
+.menu__link {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding: 4px 0;
+}
+.menu__link:hover {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,3 +362,17 @@ a {
 }
 
 /* ----- COMMON STYLES END ----- */
+/* ----- HEADER START ----- */
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header__menu {
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+  margin-right: 135px;
+  margin-left: auto;
+}
+
+/* ----- HEADER END ----- */
