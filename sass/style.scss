@@ -116,7 +116,7 @@
 /* ----- ABOUT START ----- */
 .about {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
   &__wrap {
     padding: 30px 70px 30px 100px;
     background-color: #fbfbfb;
@@ -151,3 +151,39 @@
   }
 }
 /* ----- ABOUT END ----- */
+/* ----- MAIN TASKS START ----- */
+.main-tasks {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__task {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    &:first-child {
+      max-width: 413px;
+    }
+    &:nth-child(2) {
+      max-width: 577px;
+    }
+    &-number {
+      font-family: "SFProDisplay", sans-serif;
+      font-size: 200px;
+      font-weight: 900;
+      line-height: 0.75;
+      color: #f2f2f2;
+    }
+    &-description {
+      font-size: 22px;
+      line-height: 1.64;
+    }
+  }
+}
+/* ----- MAIN TASKS END ----- */
