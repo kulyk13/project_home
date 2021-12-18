@@ -1,0 +1,70 @@
+//FORM
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  &__label {
+    position: relative;
+    &:last-of-type .form__input {
+      height: 147px;
+    }
+    &:nth-of-type(2) {
+      &::after {
+        left: 0;
+      }
+    }
+    &::after {
+      content: "*";
+      position: absolute;
+      top: 16px;
+      left: 130px;
+      color: #c30000;
+      z-index: 15;
+    }
+    &:focus-within.form__label::after {
+      content: "";
+    }
+  }
+  &__input {
+    padding: 15px 21px;
+    background-color: #f3f3f3;
+    width: 391px;
+    border: 0;
+    resize: none;
+    font-size: 14px;
+  }
+  ::-webkit-input-placeholder {
+    color: #8d8d8d;
+  }
+  :-moz-placeholder {
+    color: #8d8d8d;
+  }
+  ::-moz-placeholder {
+    color: #8d8d8d;
+  }
+  :-ms-input-placeholder {
+    color: #8d8d8d;
+  }
+  &__agree-text {
+    padding-left: 40px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.25;
+    margin: 12px 0;
+  }
+  &__btn {
+    background-color: $btn_color;
+    color: $btn_text_color;
+    border: 1px solid $btn_color;
+    &:hover {
+      background-color: $btn_color_light;
+      color: $btn_color;
+      .arrow {
+        fill: $btn_color;
+      }
+    }
+    .arrow {
+      fill: $btn_text_color;
+    }
+  }
+}

@@ -81,10 +81,10 @@ a {
 }
 @import "menu.scss";
 @import "button.scss";
+@import "form.scss";
 .socials {
   display: flex;
 }
-
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */

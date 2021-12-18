@@ -337,6 +337,79 @@ a {
   margin-left: 15px;
 }
 
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+.form__label {
+  position: relative;
+}
+.form__label:last-of-type .form__input {
+  height: 147px;
+}
+.form__label:nth-of-type(2)::after {
+  left: 0;
+}
+.form__label::after {
+  content: "*";
+  position: absolute;
+  top: 16px;
+  left: 130px;
+  color: #c30000;
+  z-index: 15;
+}
+.form__label:focus-within.form__label::after {
+  content: "";
+}
+.form__input {
+  padding: 15px 21px;
+  background-color: #f3f3f3;
+  width: 391px;
+  border: 0;
+  resize: none;
+  font-size: 14px;
+}
+.form ::-webkit-input-placeholder {
+  color: #8d8d8d;
+}
+.form :-moz-placeholder {
+  color: #8d8d8d;
+}
+.form ::-moz-placeholder {
+  color: #8d8d8d;
+}
+.form :-ms-input-placeholder {
+  color: #8d8d8d;
+}
+.form__agree-text {
+  padding-left: 40px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+  margin: 12px 0;
+}
+.form__btn {
+  background-color: #333333;
+  color: white;
+  border: 1px solid #333333;
+}
+.form__btn:hover {
+  background-color: white;
+  color: #333333;
+}
+.form__btn:hover .arrow {
+  fill: #333333;
+}
+.form__btn .arrow {
+  fill: white;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -655,6 +728,10 @@ a {
   width: 570px;
   height: 255px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  text-transform: uppercase;
 }
 .project-card__title {
   font-weight: 700;
@@ -667,10 +744,8 @@ a {
   top: 48px;
   left: 79px;
   z-index: 15;
-  text-transform: uppercase;
 }
 .project-card__btn {
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.2em;
   position: absolute;
@@ -703,21 +778,12 @@ a {
 }
 .project-card:first-child {
   background-image: url(../img/project1.webp);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
 }
 .project-card:nth-child(2) {
   background-image: url(../img/project2.webp);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
 }
 .project-card:nth-child(3) {
   background-image: url(../img/project3.webp);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
   width: 270px;
 }
 .project-card:nth-child(3) .project-card__title {
@@ -728,9 +794,6 @@ a {
 }
 .project-card:nth-child(4) {
   background-image: url(../img/project4.webp);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
   width: 470px;
 }
 .project-card:nth-child(4) .project-card__title {
@@ -741,9 +804,6 @@ a {
 }
 .project-card:nth-child(5) {
   background-image: url(../img/project5.webp);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
   width: 370px;
 }
 .project-card:nth-child(5) .project-card__title {
@@ -754,3 +814,21 @@ a {
 }
 
 /* ----- OUR PROJECTS END ----- */
+/* ----- CONTACT US START ----- */
+.contact-us {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact-us__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-us__title {
+  margin-bottom: 22px;
+}
+
+/* ----- CONTACT US END ----- */

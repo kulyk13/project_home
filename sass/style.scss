@@ -218,6 +218,10 @@
   width: 570px;
   height: 255px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  text-transform: uppercase;
   &__title {
     font-weight: 700;
     font-size: 64px;
@@ -228,10 +232,8 @@
     top: 48px;
     left: 79px;
     z-index: 15;
-    text-transform: uppercase;
   }
   &__btn {
-    text-transform: uppercase;
     color: #fff;
     letter-spacing: 0.2em;
     position: absolute;
@@ -267,21 +269,12 @@
   }
   &:first-child {
     background-image: url(../img/project1.webp);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
   }
   &:nth-child(2) {
     background-image: url(../img/project2.webp);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
   }
   &:nth-child(3) {
     background-image: url(../img/project3.webp);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
     width: 270px;
     .project-card__title {
       left: 16px;
@@ -292,9 +285,6 @@
   }
   &:nth-child(4) {
     background-image: url(../img/project4.webp);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
     width: 470px;
     .project-card__title {
       left: 53px;
@@ -305,9 +295,6 @@
   }
   &:nth-child(5) {
     background-image: url(../img/project5.webp);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
     width: 370px;
     .project-card__title {
       left: 53px;
@@ -318,3 +305,16 @@
   }
 }
 /* ----- OUR PROJECTS END ----- */
+/* ----- CONTACT US START ----- */
+.contact-us {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 22px;
+  }
+}
+/* ----- CONTACT US END ----- */
