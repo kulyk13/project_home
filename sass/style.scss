@@ -308,7 +308,7 @@
 /* ----- CONTACT US START ----- */
 .contact-us {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
   &__wrap {
     display: flex;
     justify-content: space-between;
@@ -318,3 +318,95 @@
   }
 }
 /* ----- CONTACT US END ----- */
+/* ----- FOOTER START ----- */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 24px;
+  background-color: #2c2c2c;
+  color: #fff;
+  &__main {
+    display: flex;
+    padding-bottom: 50px;
+  }
+  &__nav {
+    display: flex;
+    align-items: flex-start;
+  }
+  .logo {
+    margin-top: -10px;
+    margin-right: 90px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  &__menu {
+    flex-direction: column;
+    text-transform: none;
+    row-gap: 16px;
+    &-link {
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.7;
+      padding: 0;
+      &:hover {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+  &__contacts {
+    max-width: 285px;
+    margin-left: auto;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 22px;
+      margin-left: -10px;
+    }
+    &-link {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      align-items: baseline;
+      &:hover {
+        text-decoration: underline;
+      }
+      i {
+        margin-right: 15px;
+        font-size: 16px;
+      }
+    }
+  }
+  &__socials {
+    margin-left: 150px;
+    &-list {
+      display: flex;
+      margin-left: -10px;
+      column-gap: 20px;
+    }
+    &-link {
+      color: #fff;
+      font-size: 19px;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__bottom {
+    padding-top: 24px;
+    border-top: 1px solid #ffffff1a;
+  }
+}
+.copyright {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #c7c7c780;
+}
+/* ----- FOOTER END ----- */

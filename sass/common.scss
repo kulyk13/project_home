@@ -82,9 +82,6 @@ a {
 @import "menu.scss";
 @import "button.scss";
 @import "form.scss";
-.socials {
-  display: flex;
-}
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -99,6 +96,15 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-telephone:before {
+  content: "\e902";
+}
+.icon-geo:before {
+  content: "\e903";
+}
+.icon-mail:before {
+  content: "\e905";
+}
 .icon-arrow:before {
   content: "\e900";
 }
@@ -106,25 +112,19 @@ a {
   content: "\e901";
 }
 .icon-facebook:before {
-  content: "\e902";
-  color: #fff;
-}
-.icon-geoposition:before {
-  content: "\e903";
-}
-.icon-linkedin:before {
   content: "\e904";
   color: #fff;
 }
-.icon-mail:before {
-  content: "\e905";
-}
-.icon-phone:before {
+.icon-linkedin:before {
   content: "\e906";
   color: #fff;
 }
-.icon-pinterest:before {
+.icon-phone:before {
   content: "\e907";
+  color: #fff;
+}
+.icon-pinterest:before {
+  content: "\e909";
   color: #fff;
 }
 .icon-twitter:before {
