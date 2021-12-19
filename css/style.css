@@ -347,16 +347,10 @@ a {
           flex-direction: column;
   row-gap: 10px;
 }
-.form__label {
-  position: relative;
+.form:focus-within > .form__label::after {
+  content: "";
 }
-.form__label:last-of-type .form__input {
-  height: 147px;
-}
-.form__label:nth-of-type(2)::after {
-  left: 0;
-}
-.form__label::after {
+.form__label.required::after {
   content: "*";
   position: absolute;
   top: 16px;
@@ -364,8 +358,8 @@ a {
   color: #c30000;
   z-index: 15;
 }
-.form__label:focus-within.form__label::after {
-  content: "";
+.form__label-checkbox {
+  position: relative;
 }
 .form__input {
   padding: 15px 21px;
@@ -387,6 +381,28 @@ a {
 .form :-ms-input-placeholder {
   color: #8d8d8d;
 }
+.form__checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form__checkbox:focus-within + .form__check {
+  outline: 2px solid #000;
+}
+.form__checkbox:checked + .form__check {
+  background-image: url(../img/check.svg);
+}
+.form__check {
+  position: absolute;
+  top: 5px;
+  width: 24px;
+  height: 24px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 .form__agree-text {
   padding-left: 40px;
   font-size: 14px;
@@ -399,11 +415,11 @@ a {
   color: white;
   border: 1px solid #333333;
 }
-.form__btn:hover {
+.form__btn:hover, .form__btn:focus-within {
   background-color: white;
   color: #333333;
 }
-.form__btn:hover .arrow {
+.form__btn:hover .arrow, .form__btn:focus-within .arrow {
   fill: #333333;
 }
 .form__btn .arrow {
@@ -711,11 +727,11 @@ a {
   border: 1px solid #333333;
   margin-left: auto;
 }
-.our-projects__btn:hover {
+.our-projects__btn:hover, .our-projects__btn:focus-within {
   background-color: white;
   color: #333333;
 }
-.our-projects__btn:hover .arrow {
+.our-projects__btn:hover .arrow, .our-projects__btn:focus-within .arrow {
   fill: #333333;
 }
 .our-projects__btn .arrow {
@@ -828,6 +844,21 @@ a {
 .contact-us__title {
   margin-bottom: 22px;
 }
+.contact-us__form-label {
+  position: relative;
+}
+.contact-us__form-label:nth-of-type(2)::after {
+  left: 129px;
+}
+.contact-us__form-label:nth-of-type(3)::after {
+  left: 61px;
+}
+.contact-us__form-label:nth-last-of-type(2)::after {
+  left: 90px;
+}
+.contact-us__form-label:nth-last-of-type(2) .form__input {
+  height: 147px;
+}
 
 /* ----- CONTACT US END ----- */
 /* ----- FOOTER START ----- */
@@ -927,7 +958,7 @@ a {
   color: #fff;
   font-size: 19px;
 }
-.footer__socials-link:hover {
+.footer__socials-link:hover, .footer__socials-link:focus-within {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }

@@ -3,26 +3,22 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  &:focus-within > .form__label::after {
+    content: "";
+  }
   &__label {
-    position: relative;
-    &:last-of-type .form__input {
-      height: 147px;
-    }
-    &:nth-of-type(2) {
+    &.required {
       &::after {
-        left: 0;
+        content: "*";
+        position: absolute;
+        top: 16px;
+        left: 130px;
+        color: #c30000;
+        z-index: 15;
       }
     }
-    &::after {
-      content: "*";
-      position: absolute;
-      top: 16px;
-      left: 130px;
-      color: #c30000;
-      z-index: 15;
-    }
-    &:focus-within.form__label::after {
-      content: "";
+    &-checkbox {
+      position: relative;
     }
   }
   &__input {
@@ -45,6 +41,26 @@
   :-ms-input-placeholder {
     color: #8d8d8d;
   }
+  &__checkbox {
+    position: absolute;
+    appearance: none;
+    &:focus-within + .form__check {
+      outline: 2px solid #000;
+    }
+    &:checked + .form__check {
+      background-image: url(../img/check.svg);
+    }
+  }
+  &__check {
+    position: absolute;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
   &__agree-text {
     padding-left: 40px;
     font-size: 14px;
@@ -56,7 +72,8 @@
     background-color: $btn_color;
     color: $btn_text_color;
     border: 1px solid $btn_color;
-    &:hover {
+    &:hover,
+    &:focus-within {
       background-color: $btn_color_light;
       color: $btn_color;
       .arrow {

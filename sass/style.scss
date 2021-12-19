@@ -1,6 +1,4 @@
 @import "variables.scss";
-@import "templates.scss";
-@import "mixins.scss";
 @import "fonts.scss";
 @import "reset.scss";
 @import "common.scss";
@@ -202,7 +200,8 @@
     color: $btn_text_color;
     border: 1px solid $btn_color;
     margin-left: auto;
-    &:hover {
+    &:hover,
+    &:focus-within {
       background-color: $btn_color_light;
       color: $btn_color;
       .arrow {
@@ -316,6 +315,29 @@
   &__title {
     margin-bottom: 22px;
   }
+  &__form {
+    &-label {
+      position: relative;
+      &:nth-of-type(2) {
+        &::after {
+          left: 129px;
+        }
+      }
+      &:nth-of-type(3) {
+        &::after {
+          left: 61px;
+        }
+      }
+      &:nth-last-of-type(2) {
+        &::after {
+          left: 90px;
+        }
+        .form__input {
+          height: 147px;
+        }
+      }
+    }
+  }
 }
 /* ----- CONTACT US END ----- */
 /* ----- FOOTER START ----- */
@@ -392,7 +414,8 @@
     &-link {
       color: #fff;
       font-size: 19px;
-      &:hover {
+      &:hover,
+      &:focus-within {
         transform: scale(1.2);
       }
     }

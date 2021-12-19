@@ -250,11 +250,11 @@
                             <input id="name" class="form__input contact-us__form-input" type="text" name="name"
                                 placeholder="Имя">
                         </label>
-                        <label class="form__label contact-us__form-label">
+                        <label class="form__label contact-us__form-label required">
                             <input id="phoneNumber" class="form__input contact-us__form-input" type="tel"
                                 name="phoneNumber" placeholder="Номер телефона" required>
                         </label>
-                        <label class="form__label contact-us__form-label">
+                        <label class="form__label contact-us__form-label required">
                             <input id="email" class="form__input contact-us__form-input" type="email" name="email"
                                 placeholder="E-mail" required>
                         </label>
@@ -262,12 +262,20 @@
                             <input id="interesting" class="form__input contact-us__form-input" type="text"
                                 name="interesting" placeholder="Интересующий товар/услуга">
                         </label>
-                        <label class="form__label contact-us__form-label">
+                        <label class="form__label contact-us__form-label required">
                             <textarea id="message" class="form__input contact-us__form-input" name="message"
                                 placeholder="Сообщение" required></textarea>
                         </label>
-                        <p class="form__agree-text contact-us__agree-text">Отправляя заявку Вы соглашаетесь с политикой
-                            конфиденциальности</p>
+                        <label class="form__label-checkbox contact-us__form-checkbox">
+                            <input id="agree" name="agree" type="checkbox" class="form__checkbox contact-us__checkbox"
+                                required>
+                            <span class="form__check"></span>
+                            <p class="form__agree-text contact-us__agree-text">
+                                Отправляя заявку Вы
+                                соглашаетесь с политикой
+                                конфиденциальности
+                            </p>
+                        </label>
                         <button id="sendForm" class="btn form__btn contact-us__form-btn" type="submit">
                             Отправить
                             <svg class="arrow" width="19" height="9" viewbox="0 0 19 9" fill="none">

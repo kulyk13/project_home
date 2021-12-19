@@ -16,3 +16,6 @@ const heroSlider = new Swiper(".hero-slider", {
         }
     },
 });
+
+//Copyright year
+copyrightYear.textContent = new Date().getFullYear();
