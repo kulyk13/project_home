@@ -1,0 +1,163 @@
+@import "variables.scss";
+/* ----- ADAPTIVE START ----- */
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+  .container {
+    max-width: 1170px;
+  }
+  .about__wrap {
+    padding-right: 55px;
+    padding-left: 85px;
+  }
+  .our-projects__wrap {
+    row-gap: 15px;
+  }
+  .project-card {
+    width: 562px;
+    &__title {
+      left: 67px;
+    }
+    &__btn {
+      left: 59px;
+    }
+  }
+  .contact-us__img {
+    width: 719px;
+  }
+}
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 990px;
+  }
+  .section-title {
+    font-size: 54px;
+  }
+  .header__menu {
+    margin-right: 0;
+  }
+  .hero-slider {
+    &__slide-title {
+      padding-top: 200px;
+    }
+    &__slide-img {
+      width: 600px;
+      height: 646px;
+    }
+    &__btn_next::after {
+      width: 218px;
+      right: -218px;
+    }
+    .swiper-pagination-bullets {
+      margin-left: -5px;
+    }
+  }
+  .about {
+    &__wrap {
+      padding-left: 50px;
+      padding-right: 30px;
+    }
+    &__pic-block {
+      gap: 15px;
+      width: 475px;
+    }
+    &__img {
+      &:nth-child(1) {
+        width: 230px;
+        height: 226px;
+      }
+      &:nth-child(2) {
+        width: 230px;
+        height: 294px;
+      }
+      &:nth-child(3) {
+        width: 230px;
+        height: 119px;
+        margin-top: -135px;
+      }
+    }
+    &__offer {
+      max-width: 355px;
+      row-gap: 15px;
+    }
+  }
+  .main-tasks {
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__task {
+      column-gap: 15px;
+      &-number {
+        font-size: 175px;
+      }
+      &-description {
+        line-height: 1.4;
+      }
+      &:first-child {
+        max-width: 345px;
+      }
+      &:nth-child(2) {
+        max-width: 546px;
+      }
+    }
+  }
+  .our-projects__title {
+    margin-bottom: 15px;
+  }
+  .project-card {
+    width: 465px;
+    &__title {
+      font-size: 54px;
+    }
+    &:nth-child(3) {
+      width: 240px;
+    }
+    &:nth-child(4) {
+      width: 370px;
+      .project-card__title {
+        left: 37px;
+      }
+      .project-card__btn {
+        left: 30px;
+      }
+    }
+    &:nth-child(5) {
+      width: 304px;
+      .project-card__title {
+        left: 50px;
+      }
+    }
+  }
+  .contact-us__img {
+    width: 527px;
+  }
+  .footer {
+    .logo {
+      margin-right: 50px;
+    }
+    &__socials {
+      margin-left: 70px;
+    }
+  }
+}
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+}
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+  }
+}
+// `xs` returns only a ruleset and no media query
+
+/* ----- ADAPTIVE END ----- */

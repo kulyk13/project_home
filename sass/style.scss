@@ -40,6 +40,7 @@
       left: 0;
       bottom: 2px;
       z-index: 10;
+      box-shadow: -2px 2px 0 #fff;
     }
   }
   &__btn {
@@ -194,6 +195,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 30px;
+  }
+  &__title {
+    margin-bottom: 30px;
   }
   &__btn {
     background-color: $btn_color;
@@ -433,3 +437,5 @@
   color: #c7c7c780;
 }
 /* ----- FOOTER END ----- */
+
+@import "adaptive.scss";
