@@ -1128,6 +1128,111 @@ a {
   .container {
     max-width: 750px;
   }
+
+  .header__menu {
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+  }
+
+  .hero-slider__slide-title {
+    font-size: 48px;
+  }
+  .hero-slider__slide-img {
+    width: 480px;
+    -o-object-position: 0;
+       object-position: 0;
+  }
+  .hero-slider__btn_next::after {
+    width: 112px;
+    right: -112px;
+  }
+  .hero-slider .swiper-pagination-bullets {
+    width: 140px;
+  }
+  .hero-slider .swiper-pagination-bullets::before {
+    left: 45px;
+  }
+  .hero-slider .swiper-pagination-bullets .swiper-pagination-bullet {
+    font-size: 20px;
+  }
+
+  .about__wrap {
+    padding-left: 40px;
+    padding-right: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__pic-block {
+    margin: 0;
+  }
+  .about__img:nth-child(1) {
+    width: 163px;
+    height: 160px;
+  }
+  .about__img:nth-child(2) {
+    width: 162px;
+    height: 208px;
+    margin-top: 24px;
+  }
+  .about__img:nth-child(3) {
+    width: 163px;
+    height: 84px;
+    margin-top: -72px;
+  }
+  .about__offer {
+    max-width: 300px;
+  }
+
+  .main-tasks__task-number {
+    font-size: 150px;
+  }
+  .main-tasks__task-description {
+    font-size: 18px;
+  }
+  .main-tasks__task:first-child {
+    max-width: 290px;
+  }
+  .main-tasks__task:nth-child(2) {
+    max-width: 385px;
+  }
+
+  .project-card__title {
+    opacity: 1;
+  }
+  .project-card__btn {
+    opacity: 1;
+  }
+  .project-card::after {
+    opacity: 0.8;
+  }
+  .project-card:nth-child(1) {
+    width: 100%;
+  }
+  .project-card:nth-child(4) {
+    width: 400px;
+  }
+
+  .contact-us__img {
+    width: 300px;
+  }
+
+  .footer .logo {
+    margin-right: 30px;
+  }
+  .footer__socials {
+    margin-left: 20px;
+  }
+  .footer__socials-list {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+  .footer__contacts-list {
+    width: 200px;
+    row-gap: 0;
+  }
 }
 @media (max-width: 767.98px) {
   .container {
