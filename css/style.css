@@ -360,6 +360,11 @@ a {
 }
 .form__label-checkbox {
   position: relative;
+  padding-left: 40px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+  margin: 12px 0;
 }
 .form__input {
   padding: 15px 21px;
@@ -395,20 +400,14 @@ a {
 }
 .form__check {
   position: absolute;
-  top: 5px;
+  top: 0;
+  left: 0;
   width: 24px;
   height: 24px;
   background-color: #f3f3f3;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-.form__agree-text {
-  padding-left: 40px;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  line-height: 1.25;
-  margin: 12px 0;
 }
 .form__btn {
   background-color: #333333;
