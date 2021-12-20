@@ -12,6 +12,9 @@
     margin-left: auto;
     letter-spacing: 0.2em;
   }
+  &__burger-btn {
+    display: none;
+  }
 }
 /* ----- HEADER END ----- */
 /* ----- HERO START ----- */
@@ -315,11 +318,15 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__title {
     margin-bottom: 22px;
   }
   &__form {
+    &-checkbox {
+      width: 391px;
+    }
     &-label {
       position: relative;
       &:nth-of-type(2) {
@@ -352,15 +359,18 @@
   color: #fff;
   &__main {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 50px;
-  }
-  &__nav {
-    display: flex;
-    align-items: flex-start;
   }
   .logo {
     margin-top: -10px;
-    margin-right: 90px;
+  }
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    column-gap: 150px;
   }
   &__title {
     font-weight: 700;
@@ -384,7 +394,7 @@
     }
   }
   &__contacts {
-    max-width: 285px;
+    max-width: 275px;
     margin-left: auto;
     &-list {
       display: flex;
@@ -409,7 +419,6 @@
     }
   }
   &__socials {
-    margin-left: 150px;
     &-list {
       display: flex;
       margin-left: -10px;

@@ -17,5 +17,14 @@ const heroSlider = new Swiper(".hero-slider", {
     },
 });
 
+//Burger menu
+burgerBtn.addEventListener("click", (ev) => {
+    burgerMenu.classList.toggle('open')
+    burgerBtn.classList.toggle('open')
+});
+window.addEventListener("load", (ev) => {
+    burgerMenu.classList.add("transition");
+});
+
 //Copyright year
 copyrightYear.textContent = new Date().getFullYear();

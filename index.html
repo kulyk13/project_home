@@ -31,7 +31,7 @@
             <a href="index.html" class="logo">
                 <img src="img/logo.webp" alt="Dgital project" class="logo__img" width="70" height="44">
             </a>
-            <ul class="menu header__menu">
+            <ul id="burgerMenu" class="menu header__menu burger-menu">
                 <li class="menu__item header__menu-item">
                     <a href="#" class="menu__link header__menu-link">Главная</a>
                 </li>
@@ -48,6 +48,10 @@
                     <a href="#" class="menu__link header__menu-link">Контакты</a>
                 </li>
             </ul>
+            <button id="burgerBtn" class="burger-menu__btn header__burger-btn" aria-label="Меню" type="button">
+                <i class="icon icon-menu "></i>
+                <i class="icon icon-close"></i>
+            </button>
         </nav>
     </header>
 
@@ -293,12 +297,12 @@
 
     <footer class="footer">
         <div class="footer__main container">
-            <nav class="nav footer__nav">
-                <a href="index.html" class="logo">
-                    <img src="img/logo-light.webp" alt="Digital project" class="logo__img" width="145" height="94"
-                        loading="lazy">
-                </a>
-                <div class="footer__nav-info">
+            <a href="index.html" class="logo">
+                <img src="img/logo-light.webp" alt="Digital project" class="logo__img" width="145" height="94"
+                    loading="lazy">
+            </a>
+            <div class="footer__info">
+                <div class="footer__info-nav">
                     <h2 class="footer__title">Информация</h2>
                     <ul class="menu footer__menu">
                         <li class="menu__item footer__menu-item">
@@ -318,59 +322,60 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-            <div class="contacts footer__contacts">
-                <h2 class="footer__title">Контакты</h2>
-                <ul class="contacts__list footer__contacts-list">
-                    <li class="contacts__item footer__contacts-item">
-                        <a href="https://goo.gl/maps/kHP5TnUCDpaTms6S9" rel="nofollow noreferrer noopener"
-                            class="contacts__link footer__contacts-link" target="_blank" title="Карта">
-                            <i class="icon-geo"></i>
-                            100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
-                        </a>
-                    </li>
-                    <li class="contacts__item footer__contacts-item">
-                        <a href="tel:+380000000000" class="contacts__link footer__contacts-link" title="Номер телефона">
-                            <i class="icon-telephone    "></i>
-                            +38 (000) 000 00 00
-                        </a>
-                    </li>
-                    <li class="contacts__item footer__contacts-item">
-                        <a href="mailto:mail@gmail.com" class="contacts__link footer__contacts-link" title="Почта">
-                            <i class="icon-mail"></i>
-                            mail@gmail.com
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="socials footer__socials">
-                <h2 class="footer__title">Социальные сети</h2>
-                <ul class="socials__list footer__socials-list">
-                    <li class="socials__list-item footer__socials-item">
-                        <a href="https://facebook.com" rel="nofollow noreferrer noopener"
-                            class="socials__list-link footer__socials-link" target="_blank" title="Facebook">
-                            <i class="icon-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="socials__list-item footer__socials-item">
-                        <a href="https://twitter.com" rel="nofollow noreferrer noopener"
-                            class="socials__list-link footer__socials-link" target="_blank" title="Twitter">
-                            <i class="icon-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="socials__list-item footer__socials-item">
-                        <a href="https://linkedin.com" rel="nofollow noreferrer noopener"
-                            class="socials__list-link footer__socials-link" target="_blank" title="LinkedIn">
-                            <i class="icon-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="socials__list-item footer__socials-item">
-                        <a href="https://pinterest.com" rel="nofollow noreferrer noopener"
-                            class="socials__list-link footer__socials-link" target="_blank" title="Pinterest">
-                            <i class="icon-pinterest"></i>
-                        </a>
-                    </li>
-                </ul>
+                <div class="contacts footer__contacts">
+                    <h2 class="footer__title">Контакты</h2>
+                    <ul class="contacts__list footer__contacts-list">
+                        <li class="contacts__item footer__contacts-item">
+                            <a href="https://goo.gl/maps/kHP5TnUCDpaTms6S9" rel="nofollow noreferrer noopener"
+                                class="contacts__link footer__contacts-link" target="_blank" title="Карта">
+                                <i class="icon-geo"></i>
+                                100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
+                            </a>
+                        </li>
+                        <li class="contacts__item footer__contacts-item">
+                            <a href="tel:+380000000000" class="contacts__link footer__contacts-link"
+                                title="Номер телефона">
+                                <i class="icon-telephone    "></i>
+                                +38 (000) 000 00 00
+                            </a>
+                        </li>
+                        <li class="contacts__item footer__contacts-item">
+                            <a href="mailto:mail@gmail.com" class="contacts__link footer__contacts-link" title="Почта">
+                                <i class="icon-mail"></i>
+                                mail@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="socials footer__socials">
+                    <h2 class="footer__title">Социальные сети</h2>
+                    <ul class="socials__list footer__socials-list">
+                        <li class="socials__list-item footer__socials-item">
+                            <a href="https://facebook.com" rel="nofollow noreferrer noopener"
+                                class="socials__list-link footer__socials-link" target="_blank" title="Facebook">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item footer__socials-item">
+                            <a href="https://twitter.com" rel="nofollow noreferrer noopener"
+                                class="socials__list-link footer__socials-link" target="_blank" title="Twitter">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item footer__socials-item">
+                            <a href="https://linkedin.com" rel="nofollow noreferrer noopener"
+                                class="socials__list-link footer__socials-link" target="_blank" title="LinkedIn">
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item footer__socials-item">
+                            <a href="https://pinterest.com" rel="nofollow noreferrer noopener"
+                                class="socials__list-link footer__socials-link" target="_blank" title="Pinterest">
+                                <i class="icon-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="footer__bottom">

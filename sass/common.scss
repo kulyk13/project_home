@@ -94,6 +94,12 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-close:before {
+  content: "\e90b";
+}
+.icon-menu:before {
+  content: "\e90a";
+}
 .icon-telephone:before {
   content: "\e902";
 }
