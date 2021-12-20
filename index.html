@@ -18,11 +18,13 @@
     <link rel="preload" href="fonts/GothicA1-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="css/style.css" as="style" type="text/css" />
     <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" type="text/css" crossorigin />
     <link rel="preload" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style" type="text/css"
         crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="#" type="icon/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.png" type="icon/x-icon" />
 </head>
 
 <body>
@@ -119,11 +121,11 @@
             <div class="about__wrap ">
                 <figure class="about__pic-block">
                     <img src="img/about1.webp" alt="Здание компании" class="about__img" width="270" height="265"
-                        loading="lazy">
+                        loading="lazy" data-aos="fade-down" data-aos-duration="1000">
                     <img src="img/about2.webp" alt="Здание компании" class="about__img" width="270" height="345"
-                        loading="lazy">
+                        loading="lazy" data-aos="fade-left" data-aos-duration="1000">
                     <img src="img/about3.webp" alt="Здание компании" class="about__img" width="270" height="140"
-                        loading="lazy">
+                        loading="lazy" data-aos="fade-right" data-aos-duration="1000">
                 </figure>
                 <div class="about__offer">
                     <h2 class="section-title about__offer-title">О компании</h2>
@@ -151,13 +153,13 @@
             <div class="container">
                 <h2 class="section-title main-tasks__title">Основные задачи</h2>
                 <div class="main-tasks__group">
-                    <div class="main-tasks__task">
+                    <div class="main-tasks__task" data-aos="flip-up" data-aos-duration="1000">
                         <span class="main-tasks__task-number">1</span>
                         <p class="main-tasks__task-description">
                             Создание комфортных условий и повышение качества обслуживания клиентов
                         </p>
                     </div>
-                    <div class="main-tasks__task">
+                    <div class="main-tasks__task" data-aos="flip-down" data-aos-duration="1000">
                         <span class="main-tasks__task-number">2</span>
                         <p class="main-tasks__task-description">
                             Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки
@@ -172,7 +174,7 @@
             <div class="our-projects__wrap container">
                 <h2 class="section-title our-projects__title">Наши проекты</h2>
                 <div class="our-projects__wrap">
-                    <article class="project-card our-projects__card">
+                    <article class="project-card our-projects__card" data-aos="zoom-in" data-aos-duration="1000">
                         <h3 class="project-card__title our-projects__card-title">Досуговый центр</h3>
                         <a href="#" class="project-card__btn our-projects__project-btn">
                             Подробнее
@@ -184,7 +186,7 @@
                             </svg>
                         </a>
                     </article>
-                    <article class="project-card our-projects__card">
+                    <article class="project-card our-projects__card" data-aos="zoom-in-down" data-aos-duration="1000">
                         <h3 class="project-card__title our-projects__card-title">Театр</h3>
                         <a href="#" class="project-card__btn our-projects__project-btn">
                             Подробнее
@@ -196,7 +198,7 @@
                             </svg>
                         </a>
                     </article>
-                    <article class="project-card our-projects__card">
+                    <article class="project-card our-projects__card" data-aos="zoom-in-right" data-aos-duration="1000">
                         <h3 class="project-card__title our-projects__card-title">Школа</h3>
                         <a href="#" class="project-card__btn our-projects__project-btn">
                             Подробнее
@@ -208,7 +210,7 @@
                             </svg>
                         </a>
                     </article>
-                    <article class="project-card our-projects__card">
+                    <article class="project-card our-projects__card" data-aos="zoom-in-up" data-aos-duration="1000">
                         <h3 class="project-card__title our-projects__card-title">Жилой комплекс</h3>
                         <a href="#" class="project-card__btn our-projects__project-btn">
                             Подробнее
@@ -220,7 +222,7 @@
                             </svg>
                         </a>
                     </article>
-                    <article class="project-card our-projects__card">
+                    <article class="project-card our-projects__card" data-aos="zoom-in-left" data-aos-duration="1000">
                         <h3 class="project-card__title our-projects__card-title">Центр</h3>
                         <a href="#" class="project-card__btn our-projects__project-btn">
                             Подробнее
@@ -383,6 +385,7 @@
         </div>
     </footer>
 
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script defer src="js/app.js"></script>
 

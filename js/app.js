@@ -26,5 +26,8 @@ window.addEventListener("load", (ev) => {
     burgerMenu.classList.add("transition");
 });
 
+//Animate on scroll
+AOS.init();
+
 //Copyright year
 copyrightYear.textContent = new Date().getFullYear();
