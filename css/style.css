@@ -1594,11 +1594,6 @@ a {
   .footer__title {
     margin-bottom: 15px;
   }
-  .footer__info {
-    -webkit-column-gap: 170px;
-       -moz-column-gap: 170px;
-            column-gap: 170px;
-  }
   .footer__contacts {
     margin-left: 0;
   }

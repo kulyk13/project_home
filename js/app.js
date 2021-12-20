@@ -30,7 +30,12 @@ window.addEventListener("load", (ev) => {
 });
 
 //Animate on scroll
-AOS.init();
+AOS.init({
+    disable: function() {
+        var maxWidth = 768;
+        return window.innerWidth < maxWidth;
+      }
+});
 
 //Copyright year
 copyrightYear.textContent = new Date().getFullYear();
