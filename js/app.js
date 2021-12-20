@@ -2,6 +2,9 @@
 const slides = ['01', '02']
 const heroSlider = new Swiper(".hero-slider", {
     loop: true,
+    lazy: {
+        loadPrevNext: true,
+    },
     spaceBetween: 100,
     speed: 400,
     navigation: {
